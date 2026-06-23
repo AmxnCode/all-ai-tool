@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "All AI Tool",
+    "slug": "focusflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0D0D0D",
+      "resizeMode": "contain"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.focusflow.app",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "FocusFlow needs microphone access for voice notes and meeting transcription.",
+        "NSPhotoLibraryUsageDescription": "FocusFlow needs photo access to organize your screenshots."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D0D0D",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "package": "com.focusflow.app",
+      "permissions": [
+        "RECORD_AUDIO",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "FocusFlow needs microphone access for voice notes."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "FocusFlow needs camera access to scan screenshots."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "FocusFlow needs photo access to organize your screenshots."
+        }
+      ]
+    ]
+  }
+}
