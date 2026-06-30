@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "All AI Tool",
-    "slug": "focusflow",
+    "slug": "allaitool",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,10 +13,10 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.focusflow.app",
+      "bundleIdentifier": "com.allaitool.app",
       "infoPlist": {
-        "NSMicrophoneUsageDescription": "FocusFlow needs microphone access for voice notes and meeting transcription.",
-        "NSPhotoLibraryUsageDescription": "FocusFlow needs photo access to organize your screenshots."
+        "NSMicrophoneUsageDescription": "All AI Tool needs microphone access for voice notes.",
+        "NSPhotoLibraryUsageDescription": "All AI Tool needs photo access to organize your screenshots."
       }
     },
     "android": {
@@ -26,7 +26,7 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "package": "com.focusflow.app",
+      "package": "com.allaitool.app",
       "permissions": [
         "RECORD_AUDIO",
         "READ_EXTERNAL_STORAGE",
@@ -40,19 +40,19 @@
       [
         "expo-av",
         {
-          "microphonePermission": "FocusFlow needs microphone access for voice notes."
+          "microphonePermission": "All AI Tool needs microphone access for voice notes."
         }
       ],
       [
         "expo-camera",
         {
-          "cameraPermission": "FocusFlow needs camera access to scan screenshots."
+          "cameraPermission": "All AI Tool needs camera access to scan screenshots."
         }
       ],
       [
         "expo-media-library",
         {
-          "photosPermission": "FocusFlow needs photo access to organize your screenshots."
+          "photosPermission": "All AI Tool needs photo access to organize your screenshots."
         }
       ]
     ]
